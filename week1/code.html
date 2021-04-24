@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="week1.css">
+        <script src="week1.js"></script>
+        <title> Kyle Josephson Portfolio Week 1</title>
+    </head>
+    <body>
+        <h1>Week 1</h1>
+        <pre>
+            function saveStory(){
+                12 var storyName = document.getElementById(“name_input”).value
+                13 var storyHTML = document.getElementById(“story_editor”).value
+                14 localStorage.setItem(storyName, storyHTML)
+                
+            function loadStory(){
+                7 var storyName = document.getElementById(“name_input”).value
+                8 var storyHTML = localStorage.getItem(storyName)
+                9 document.getElementById(“story_editor”).value = storyHTML
+        </pre>
+    </body>
+</html>
