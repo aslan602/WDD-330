@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="week1.css">
+        <script src="week1.js"></script>
+        <title> Kyle Josephson Portfolio Week 3</title>
+    </head>
+    <body>
+        <h1>Week 3</h1>
+        <pre>
+            Chapter 5
+            "This" is used to access information from a object during runtime.  In JavaScript, "this" keyword does not have to be accociated with an object. 
+            To create an object, just use {}.  A method is a function in an object. Seperate methods in an object with a comma.
+            The "in" operator can be used to check if a value exists in an object. EX: 'city' in superman.  It will return a boolean.
+            It is possible to nest objects.
+            Naming Parameters lets you add arugument just like an object.  Can even assign values in the argument.  
+            Namespace is a way to prevent using the same function name is a program or library.  Just put the function inside an object!
+            Regular expresion can be use with an object regExp().  The exec() and text() methods can be used to finfd the answers for the expression.
+            Matched Groups can be used by () in RegExp and put in an array.  See example in "code.html"
+
+            Chapter 6
+            "DOM" stands for Document Object Model
+            DOM started in 1998. 
+            Different parts of a document are called nodes and have a number attached to them.  nodeType gices 1=element, 2=attribute, 3=text, 8=comment 9="body"
+            nodeName will also name the part of the document.
+            CSS querySelector is a different way to find very specific information.  It is also how jquery works. EX: 
+            const ul = document.querySelector('ul#roster');
+            ul.querySelector('li#bats')
+            The DOM is set=up like a tree.  There is a parent node, childnodes, siblingnodes, and so forth. 
+            You can use getters and setter with the classes and nodes.
+            The toggle method can add or subtract a class if there is one that exists or not. See "code" for example.
+            The DOM can create conent using createElement and createTextNode. Could also use textContennt.
+            Other methods include appendChild, insertBefore, removeChild, and replaceChild.
+
+            Chapter 7
+            Events are something that happens when a user clicks on something.
+            addEventListener() is the right way to add an event.
+            Parameter agruements are 1.event 2.callback function 3.capture or not (bool)
+            To see wher a click happened from lft and top in pixels, use screenX or screenY, clientX or clientY, and/or pageX or pageY. This goes from screen, browser window
+            to document.
+            Remove event listeners by removeEventListener().
+        </pre>
+    </body>
+</html>
