@@ -67,6 +67,14 @@ header {
     line-height: 300%;  
 }
 
+
+a {   
+    font-size: 1.75vw;
+    color:rgb(0, 255, 55);   
+}
+
+
+
 .pics {
     width: 100%;
     height: 100%;

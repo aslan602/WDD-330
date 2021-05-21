@@ -10,7 +10,40 @@
     <body>
         <h1>Week 4</h1>
         <pre>
+           Chapter 8
+
+           To reset a form, you can use a reset button EX: <b>"button type='reset'>Reset /button"</b>
+           A form can be sent to a different URL EX: <b>form.action = '/an/other.url'</b>
+           Adding a submit event listener can allow Javascript to intercept the form before it gets sent to the server. Look at code example 1 to see how this is done.
+           In Javascript, there can be an addEventListener added to the form to submit it.  See code example 2. Also "preventDefault()" will keep the form from being submitted.
+           The password input field does not show the charcters being typed. EX: <b>input type='password'</b>
+           Checkbox input field allow more than 1 checkbox from being selected.  This toggles true and false. This is handled by checked.
+           EX: <b>if (form.powers[i].checked) {</b> This is done in a for loop.  See code example 3.
+           Radio input fields only allow 1 choice.
+           Data from a form should be validated on the front end using Javascript AND the backend server.
            
+           Chapter 12
+
+           <b>Encapsulation</b> - Inner working are kept hidden from user and only the functions are exposed.
+           <b>Polymorphism</b> - The same process can be used for different objects. This means we can take an object that already exists and inherit all its properties and methods.
+           <b>Inheritance</b> - Taking the features of one object then adding some new features. take an object that already exists and inherit all its properties and methods. We can then improve on its functionality by
+                                adding new properties and methods.
+            Static functions are only available to the class, not instances of the class.  EX: Dice.description()  'A way of choosing random numbers'  compared to redDice.description
+                TypeError: red.description is not a function.
+            Prototype is a way of setting default values of a classs. Can run method isPrototypeOf() to see if it is a prototype.
+            Enumerable methods are user created methods by default, and can be used in a for - in loop.  Built-in methods are non-enumerable. 
+            Inheritance is possible using the extends keyword EX: class NinjaTurtle extends Turtle 
+            Polymorphism is like the toString() method.   It can be used by all objects.
+            You can use getter and setter methods to create values of an object.  EX: get()  set(value).
+
+            Chapter 15
+
+            A module is a special file that can be used in Javascript.
+            All code in modules is always in strict mode without the need for 'use strict' and there is no way to opt out of this.
+            A module has its own global scope, so any variables created in the top-level of a module can only be accessed within that module.
+            The value of this in the top level of a module is undefined, rather than the global object.
+            You can’t use HTML-style comments in modules (although this isn’t very common in any JavaScript program these days).
+            Use export and import to share information between files.  EX: export const PI = 3.1415926; and import { PI } from './pi.js';            
         </pre>
     </body>
 </html>
