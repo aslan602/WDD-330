@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyles WDD330 portfolio assignment.">
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script defer src="todo.js"></script>
+    <title> Kyle Josephson ToDo List App</title>    
+</head>
+<body>
+    <header>
+        <h1>The ToDo List</h1>
+    </header>
+    <div> 
+        <p class="infoSignToDo">ToDos</p><br>         
+        <ul id="display" class="taskelement">
+            <li class="task" id="163564895434">
+                <input type="checkbox" class="checkbox">
+                This is where tasks will appear.
+                <button class="deletebutton">X</button>
+            </li>            
+        </ul>        
+    </div>
+    <div class="infopanel">
+        <span class="displayinfo" id="info"></span>
+        <span>
+            <input type="button" class="buttonthree" id="button3" value="Compleated" onclick="complete()">
+            <input type="button" class="buttontwo" id="button2" value="Active" onclick="active()">
+            <input type="button" class="buttonone" id="button1" value="All" onclick="alltasks()">
+        </span>        
+    </div>
+    <div> 
+        <form class="taskform">
+            <p class="infoSign">Please enter a task</p>
+            <input type="text" id="gettask" class="inputtask" name=thetask placeholder="Add a task">
+            <input type="button" class="buttonSign" id="gettaskbutton" value="+" onclick="createNewTask()">
+        </form>
+    </div>     
+</body>
+</html>

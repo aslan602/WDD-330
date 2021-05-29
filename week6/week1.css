@@ -1,0 +1,25 @@
+body {
+    background-color: #0f8bf1;
+ }
+
+ 
+ pre {
+    color: rgb(251, 255, 0); 
+}
+
+h1 {
+    color: rgb(251, 255, 0);
+    text-align: center; 
+}
+
+
+a {   
+    font-size: 1.75vw;
+    color:rgb(0, 255, 55);   
+}
+
+p {
+    color: white;
+}
+
+

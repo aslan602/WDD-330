@@ -1,0 +1,161 @@
+body {
+    background-color: #22f10f;
+ }
+
+ 
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+header {
+    color: rgb(238, 255, 0);
+    font-size:2vw;
+    background-color: rgb(52, 165, 42);
+    width: 100%;
+    height: 8vw;
+    padding-top: .25vw;
+    text-align: center;    
+}
+
+.taskelement {     
+    width: 25vw;
+    height: fit-content; 
+    background-color: #22f10f;
+}
+
+.taskelement li {    
+    color: black;
+    border: 2px solid black;
+    font-size: 1.5vw;
+    width: 100%;
+    list-style-type: none;
+    background-color: rgb(238, 255, 0);
+}
+
+.infoSign {
+    font-size: 2vw;
+    padding-left: 5vw;
+}
+
+.infoSignToDo {
+    font-size: 2vw;
+    padding-left: 10vw;
+}
+
+.inputtask {
+    font-size: 2vw;
+    height: 2.7vw;
+    width: 25vw;   
+}
+
+.close { 
+    width: 85%;   
+}
+
+.checked {
+    text-decoration: line-through; 
+}
+
+.taskform {
+    margin: 0vw;
+}
+
+.deletebutton {
+    float: right;
+    padding-top: .4vw;
+}
+
+.buttonSign {
+    font-size: 2vw;    
+}
+
+.infopanel {
+    border: 2px solid black;
+    color: black;     
+    width: 22.5vw;
+    height: 2vw;
+    margin-left: 2.6vw;   
+    background-color: rgb(238, 255, 0);
+}
+
+.buttonone {
+    background-color: rgb(238, 255, 0);
+    position: static;
+    bottom: 1vw;
+    color: black; 
+    float: right;
+    padding-top: .4vw;
+    width: 3vw;
+    height: 1.8vw;
+}
+
+.buttontwo {
+    background-color: rgb(238, 255, 0);
+    position: static;
+    bottom: 1vw;
+    color: black; 
+    float: right;
+    padding-top: .4vw;
+    width: 5vw;
+    height: 1.8vw;
+}
+
+.buttonthree {
+    background-color: rgb(238, 255, 0);
+    position: static;
+    bottom: 1vw;
+    color: black; 
+    float: right;    
+    width: 7vw;
+    height: 1.8vw;
+}
+
+.displayinfo {
+    position: relative;
+    top: .3vw;
+    color: black; 
+    width: 7vw;
+    padding-left: 2vw;   
+}
