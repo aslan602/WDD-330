@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="week1.css">
+        <script src="week1.js"></script>
+        <title> Kyle Josephson Portfolio Week 7</title>
+    </head>
+    <body>
+        <h1>Week 7</h1>
+        <pre>
+            Chapter 11
+
+            Example 1:
+            function sayHello(){
+                return `Hello, my name is ${ this.name }`;
+                }
+                const clark = { name: 'Clark' };
+                const bruce = { name: 'Bruce' };
+                sayHello.call(clark);     'Hello, my name is Clarke'
+                sayHello.call(bruce);     'Hello, my name is Bruce'
+
+            Example 2:
+                square.call(null, 4);       16
+            
+            Example 3:
+                (function() {
+                    // block A
+                    const name = 'Block A';
+                    console.log(`Hello from ${name}`);
+                    }());
+                    (function() {
+                    // block B
+                    const name = 'Block B';
+                    console.log(`Hello from ${name}`);
+                    }());
+                    Hello from Block A
+                    Hello from Block B 
+            
+            Example 4:
+                function selfDestruct(){
+                    console.log('BOOOOM!');
+                    }
+                
+                    wait('This tape will self-destruct in five seconds ... ', selfDestruct, 5);
+                    console.log('Hmmm, should I accept this mission or not ...?');
+                    'This tape will self-destruct in five seconds ... '
+                    'Hmmm, should I accept this mission or not ... ? '
+                    'BOOOOM!'
+            
+            Example 5:
+                const promise = new Promise( (resolve, reject) => {
+                    // initialization code goes here
+                    if (success) {
+                    resolve(value);
+                    } else {
+                    reject(error);
+                    }
+                    });
+            
+            Code from Group Activity: Did not have time to complete it.                   
+        </pre>
+        <a href="hiking-complete.html">hiking-complete.html</a><br>
+        <a href="hikes.js">hikes.js</a><br>
+        <a href="comments.js">comments.js</a><br>
+        <a href="app5.js">app5.js</a><br>
+    </body>
+</html>
