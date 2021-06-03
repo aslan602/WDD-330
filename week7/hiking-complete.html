@@ -63,7 +63,16 @@
     <main>
       <h1>Great hikes</h1>
       <ul id="hikes" class="hikeStyles"></ul>
-      <ul id="comments"></ul>
+      <div>
+        <form id="commentForm">
+          <label for="comment">Add Comment</label><br>
+          <textarea id="comment" rows="5" cols="80"></textarea><br>
+          <input id="hikeName" name="hikeName" type="hidden" value="main">
+          <input type="submit" id="commntBtn" value="Add Comment">
+        </form>
+      </div>
+      <ul id="comments">
+      </ul>
     </main>
 
     <script src="app5.js" type="module"></script>

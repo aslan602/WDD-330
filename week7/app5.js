@@ -6,16 +6,15 @@ const comments = new Comments('comments');
 
 window.addEventListener('load', () => {
   myHikes.showHikeList();
+  comments.loadPersistent();
+  comments.showCommentList();
 });
 
-// document.getElementById("commntBtn").addEventListener("submit", function() {
-//   event.preventDefault();
-//   // document.getElementById("demo").innerHTML = "Hello World";
-// });
+document.addEventListener("click", () => {
+  comments.showCommentList();
+});
 
-
-
-document.getElementById("commentBtn").addEventListener("submit", (event) => {
+document.getElementById("commentForm").addEventListener("submit", (event) => {
   event.preventDefault();
   processSubmission();
 });
@@ -28,19 +27,10 @@ function processSubmission() {
     name: hikeName,
     date: new Date(),
     content: comment,
-    type: hike
+    type: "hike"
   };
 
-  let commentList = comments.getAllComments();
-
-  commentList.append(newComment);
+  comments.addComment(newComment)
 
   comments.showCommentList();
 }
-
-// TODO LIST
-// 1) HIKES LOAD, LIST COMMENTS WITH EACH HIKE
-// 2) HIKE DETAILS AND ALL COMMENTS FOR THAT HIKE, INPUTTED COMMENT IS WITH THE HIKE DETAILS
-// 3) SUBMIT HIKE:
-//    A) COMMENT IS SAVED AND SINGLE HIKE IS RELOADED WITH NEW COMMENT IN DETAILS
-//    B) HIKE COMMENTS SHOW ONLY WITH THE HIKE IT WAS ADDED FOR (COMMENT TYPE)

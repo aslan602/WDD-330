@@ -87,6 +87,7 @@ export default class Hikes {
     backButton.innerHTML = '&lt;- All Hikes';
     backButton.addEventListener('touchend', () => {
       this.showHikeList();
+      document.getElementById("hikeName").value = "main";
     });
     backButton.classList.add('hidden');
     this.parentElement.before(backButton);
@@ -125,8 +126,7 @@ function renderOneHikeLight(hike) {
 
 function renderOneHikeFull(hike) {
   const item = document.createElement('li');
-  item.innerHTML = ` 
-    
+  item.innerHTML = `
         <img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
         <h2>${hike.name}</h2>
         <div>
@@ -145,15 +145,8 @@ function renderOneHikeFull(hike) {
             <h3>How to get there</h3>
             <p>${hike.directions}</p>
         </div>
-        <div>
-          <form>
-            <label for="comment">Add Comment</label><br>
-            <textarea id="comment" rows="5" cols="80"></textarea><br>
-            <input id="hikeName" name="hikeName" type="hidden" value="${hike.name}">
-            <input type="submit" id="commntBtn" value="Add Comment">
-          </form> 
-        </div>
     `;
+  document.getElementById("hikeName").value = hike.name;
   return item;
 }
 
