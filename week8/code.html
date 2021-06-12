@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="week1.css">
+        <script src="week1.js"></script>
+        <title> Kyle Josephson Portfolio Week 8</title>
+    </head>
+    <body>
+        <h1>Week 8</h1>
+        <pre>
+            Group Code Week 8
+
+            HTML CODE:
+
+            !DOCTYPE html
+            html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+            head
+                meta charset="UTF-8"
+                meta name="viewport" content="width=device-width, initial-scale=1.0"
+                meta name="description" content=""
+                link rel="stylesheet" type="text/css" href=""
+                script defer src="fetchAPI.js" /script
+                title>Star Wars API Data /title    
+            /head
+            body
+            div
+                p id="display" /p
+                p id="prev"  /p
+                p id="next"  /p
+            /div
+            /body
+            /html
+
+            JAVASCRIPT CODE:
+
+                let display = document.querySelector("#display");
+                let prev = document.querySelector("#prev");
+                let next = document.querySelector("#next");
+
+                fetch("https://swapi.dev/api/starships/")
+                    .then(response => response.json())
+                    .then(data => {
+                        display.innerHTML = JSON.stringify(data.results)
+                        let linkprev = document.createElement("a"); //To add link
+                        linkprev.href = data.prev; //To add link 
+                        linkprev.innerText("Prev"); //To add link
+                        prev.appendChild(linkprev);  //To add link    
+                    })
+                    .catch("There was a n error!");
+
+            // This is all I got done in an hour.
+
+        </pre>
+    </body>
+</html>
