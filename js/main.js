@@ -34,7 +34,11 @@ const links = [
     {
         label: "Proposal",
         url: "JosephsonProposal.pdf"
-    },                     
+    }, 
+    {
+        label: "Week 10",
+        url: "week10/week10.html"
+    },                    
 ];
 
 function display() {    
