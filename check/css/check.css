@@ -1,0 +1,301 @@
+* {
+	box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    left: 200px;
+    top: 40px;
+    width: 150px;
+    height: 150px;
+}
+
+body {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(195, 213, 228);
+	color: white;
+	font-family: Avenir Next, sans-serif;
+}
+
+ header {    
+    background: rgb(33, 156, 226);
+    overflow: hidden;
+    border-radius: 10px;   
+    font-family: Raleway, sans-serif;   
+    color: black;
+    text-align: center;
+}
+
+footer {
+    position:fixed;
+    left: 0px;
+    right: 0px; 
+    bottom: 0px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-family: Avenir Next, sans-serif;
+    text-align: center;
+}
+
+.containerHeader {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	min-height: 175px;
+	margin: auto;
+}
+
+.logout {
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    left: 1600px;
+    top: 70px;
+}
+
+.container {
+    position: absolute;
+    top:30px;
+    left: 50px;
+    background-image: url("../images/checkback.png");    
+	background-color: rgb(160, 233, 240);
+    border: 5px solid black;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 1000px;
+	max-width: 100%;
+	min-height: 400px;
+    max-height: 400px;	
+}
+
+.mainheader {
+    position: inherit;
+    top:25px;
+    text-align: center;
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-size: 40px;
+}
+
+.maininfo {
+    Position: absolute;
+    left: 30px;
+    position: relative;
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-size: 30px;
+}
+
+.formcontainer {
+    position: absolute;   
+    left: 70%;
+    top: 215px;    
+	background-color: #fff;
+    border: 5px solid black;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);	
+	width: 400px;
+	max-width: 100%;
+	min-height: 800px;
+}
+
+.add {
+    position: inherit;
+    left: 15px;
+    color:black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+}
+
+.littlenum {
+    position:inherit;
+    bottom: 70px;
+    left: 600px;
+    font-family: Avenir Next, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.checknum {
+    position:inherit;
+    bottom: 120px;
+    left: 900px;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.forline {
+    position:inherit;
+    left: 30px;
+    bottom: 70px;    
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+}
+
+.payee {
+    position:inherit;
+    left: 60px;    
+    width: 600px;    
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.payeeline {
+    color:black;
+    position: inherit;
+    left: 200px;
+    bottom: 100px;
+    font-weight: bold;
+}
+
+.amountwriting {
+    position:inherit;
+    left: 200px;
+    bottom: 100px;    
+    width: 600px;    
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+.amountline {
+    color:black;
+    position: inherit;
+    left: 200px;
+    bottom: 130px;
+    font-weight: bold;
+}
+
+.amountbox {
+    position:inherit;
+    left: 750px;
+    bottom: 180px;    
+    width: 600px; 
+    border: 5px solid black;   
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.bank {
+    position: inherit;
+    left: 70px;
+    bottom: 220px;
+    color:black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+}
+
+.memoline {
+    color:black;
+    position: inherit;
+    left: 130px;
+    bottom: 220px;
+    font-weight: bold;
+}
+
+.sigline {
+    color:black;
+    position: inherit;
+    left: 600px;
+    bottom: 250px;
+    font-weight: bold;
+}
+
+.routeaccount {
+    position: inherit;
+    left: 100px;
+    bottom: 250px;
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paystubheader {
+    color:black;
+    text-align: center;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;    
+}
+
+.grossline {
+    position:inherit;
+    left: 30px;
+    color: black;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;  
+    font-size: 20px;
+}
+
+.tablestyle {
+    width: 75%;
+    color: black;
+    text-align: center;
+    font-family: Avenir Next, sans-serif;
+}
+
+.tabletotal {
+    position: inherit;
+    top: 30px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: Avenir Next, sans-serif;
+}
+
+.formheader {
+    color: black;
+    text-align: center;
+}
+
+.forminput { 
+    display: block;
+    margin: auto;   
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Avenir Next, sans-serif;
+    color: black;
+    width: 200px;
+    height: 60px;
+}
+
+.formmessage {    
+    color: black;
+    text-align: center;
+    font-family: Avenir Next, sans-serif;
+    font-size: 20px;
+}
+
+.calculate {
+    position: absolute;
+    top: 550px;
+    left: 120px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Avenir Next, sans-serif;
+    color: black;    
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This app is a payroll keeping app that displays a paycheck and paystub for one employee.">
+    <link rel="stylesheet" type="text/css" href="css/check.css">
+    <script defer src="js/check.js"></script>
+    <title>SPC Payroll Paycheck</title>    
+</head>
+<body>
+    <div>
+        <header class ="containerHeader">
+            <p class="mainheader">Payroll Check for:<span id="employee"></span></p>
+        </header>
+    </div>
+    <div class="container">
+        <p class="add">Sperry Pest Control L.L.C.</p>
+        <p class="add">1234 W Madeup St</p>
+        <p class="add">Surprise, Arizona  85387</p>
+        <p class="littlenum">91-4/1221</p>
+        <p class="checknum">8173</p>
+        <p class="forline">Pay to the Order Of:<span class="payee" id="payeename"></span></p>
+        <p class="payeeline">__________________________________________________________________________________</p>
+        <p class="amountwriting" id="written"></p>
+        <p class="amountline">_______________________________________________________</p><span class="amountbox" id="amount"></span>
+        <p class="bank">1stBank</p>
+        <p class="bank">www.efirstbank.com</p>
+        <p class="bank">(800) 964-3444</p>
+        <p class="memoline">Memo:__________________________________</p>
+        <p class="sigline">___________________________________</p>
+        <p class="routeaccount" id="account"></p>
+    </div>
+    <div class="formcontainer">
+        <h2 class="formheader">Enter the Pay Information</h2>
+        <form>
+            <div>
+                <h3 class="formheader">Hours worked this pay period</h3>
+                <input type="text" class="forminput" id="inputhours" placeholder="Hours">
+                <p class="formmessage" id="hoursmessage"></p>
+            </div>
+            <div>
+                <h3 class="formheader">Pay Amount per Hour</h3>
+                <input type="text" class="forminput" id="inputpay" placeholder="Pay/Hour">
+                <p class="formmessage" id="paymessage"></p>
+            </div>
+            <div>
+                <Input type="button" class="calculate" id="calc" value="Calculate" />
+            </div>
+        </form>
+
+        
+    </div>  
+    <div class="container">
+        <h1 class="paystubheader">Paystub</h1>
+        <p class="grossline">Gross Pay:<span class="grossline" id="gross"></span></p>
+        <table class="tablestyle">
+            <tr>          
+                <th>Withholdings</th>
+                <th>This pay period</th>
+                <th>Year To Date</th>
+            </tr>
+            <tr>
+                <td>Federal Income Tax</td>
+                <td id="fedTPP"></td>
+                <td id="fedYTD"></td>
+            </tr>
+            <tr>
+                <td>Social Security</td>
+                <td id="ssTPP"></td>
+                <td id="ssYTD"></td>
+            </tr>
+            <tr>
+                <td>Medicare</td>
+                <td id="medTPP"></td>
+                <td id="medYTD"></td>
+            </tr>
+            <tr>
+                <td>State Income Tax</td>
+                <td id="stTPP"></td>
+                <td id="stYTD"></td>
+            </tr>
+            <tr>
+                <td><b>Totals</b></td>
+                <td><b id="totTPP"></b></td>
+                <td><b id="totYTD"></b></td>
+            </tr>
+        </table>
+        <table class="tabletotal">
+            <tr>
+                <th>Pay</th>
+                <th>This Pay Period</th>
+                <th>Year To Date</th>
+            </tr>
+            <tr>
+                <td>Gross Pay</td>
+                <td id="grossTPP"></td>
+                <td id="grossYTD"></td>
+            </tr>
+            <tr>
+                <td>Net Pay</td>
+                <td id="netTPP"></td>
+                <td id="netYTD"></td>
+            </tr>
+        </table>
+    </div>    
+</body>
+</html>
+

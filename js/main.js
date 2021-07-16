@@ -38,7 +38,15 @@ const links = [
     {
         label: "Week 10",
         url: "week10/week10.html"
-    },                    
+    }, 
+    {
+        label: "Week 11",
+        url: "week11/week11.html"
+    },
+    {
+        label: "Final Project",
+        url: "check/check.html"
+    },                         
 ];
 
 function display() {    
@@ -54,9 +62,8 @@ function display() {
         a.appendChild(label);       
         a.title = label;     
         a.href = links[i].url;
-        y.appendChild(a)
-        y.appendChild(space);
-        y.appendChild(space);
+        y.appendChild(a);
+        y.appendChild(space);                       
         document.querySelector("#list").appendChild(y);                     
     }
     // document.getElementById("lists").appendChild(y);

@@ -1,5 +1,5 @@
 body {
-    background-color: #0f8bf1;
+    background-color: #063D6a;
  }
 
  
@@ -10,6 +10,11 @@ body {
 h1 {
     color: rgb(251, 255, 0);
     text-align: center; 
+}
+
+li {
+    list-style-type: none;
+    padding: 2em;
 }
 
 

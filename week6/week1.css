@@ -1,5 +1,5 @@
 body {
-    background-color: #0f8bf1;
+    background-color: #063D6a;
  }
 
  
@@ -12,14 +12,15 @@ h1 {
     text-align: center; 
 }
 
+li {
+    list-style-type: none;
+    padding: 2em;
+}
+
 
 a {   
     font-size: 1.75vw;
     color:rgb(0, 255, 55);   
-}
-
-p {
-    color: white;
 }
 
 
