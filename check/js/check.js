@@ -56,6 +56,10 @@ document.getElementById("paymessage").innerHTML = "";
 let x = document.querySelector('#calc');
 x.addEventListener('click', calculate);
 
+//Event Listener for the print button
+let p = document.querySelector('#butprint');
+p.addEventListener('click', checkPrint);
+
 //Start Calculations
 function calculate() {
     // Verify the input is good!
@@ -205,6 +209,8 @@ function Number(num) {
     this.num = num;
 };
 
+//Returns the words of the number part needed to write a check
+//This code was modified from the original version at https://stackoverflow.com/questions/554314/how-can-i-convert-an-integer-into-its-verbal-representation
 function numberToWords(num) {
     var unitsMap = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
     var tensMap = ["zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
@@ -247,12 +253,17 @@ function numberToWords(num) {
     return words.trim();
 };
 
+// Returns the decimal value of the amount of the check
 function getDecimal(num) {
     num = num.toFixed(2);    
     var radixPos = String(num).indexOf('.');
     var value = String(num).slice(radixPos + 1);
     value = Math.round(value);
     return value;
+}
+
+function checkPrint() {    
+    window.print();
 }
 
 

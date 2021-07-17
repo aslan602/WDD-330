@@ -1,3 +1,15 @@
+@media print {
+    .screen {
+        display: none;
+    }
+    .print {
+        display: block;       
+    }
+    html {
+        zoom: 75%;
+    }
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -293,6 +305,17 @@ footer {
     position: absolute;
     top: 550px;
     left: 120px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Avenir Next, sans-serif;
+    color: black;    
+}
+
+.printbutton {
+    position: absolute;
+    top: 650px;
+    left: 120px;
+    width: 150px;
     font-weight: bold;
     font-size: 30px;
     font-family: Avenir Next, sans-serif;
